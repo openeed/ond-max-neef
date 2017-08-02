@@ -1,1 +1,230 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/openeed/ond-max-neef#"
+     xml:base="http://purl.org/openeed/ond-max-neef"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://purl.org/openeed/ond-max-neef">
+        <owl:versionIRI rdf:resource="http://purl.org/openeed/ond-max-neef/1.0.0"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#belongsToMax-NeefClassOfNeeds -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/openeed/ond-max-neef#belongsToMax-NeefClassOfNeeds">
+        <rdfs:domain rdf:resource="http://purl.org/openeed/ond-max-neef#HumanRequirement"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Affection"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Creation"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Freedom"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Identity"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Leisure"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Participation"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Protection"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Subsistence"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Understanding"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#belongsToMax-NeefExistentialCategory -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/openeed/ond-max-neef#belongsToMax-NeefExistentialCategory">
+        <rdfs:domain rdf:resource="http://purl.org/openeed/ond-max-neef#HumanRequirement"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Actions"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Being"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Doing"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Having"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Interacting"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Qualities"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Settings"/>
+        <rdfs:range rdf:resource="http://purl.org/openeed/ond-max-neef#Things"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Actions -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Actions">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-max-neef#Doing"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Affection -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Affection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Being -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Being">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-max-neef#Qualities"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Creation -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Creation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Doing -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Doing">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Freedom -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Freedom">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Having -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Having">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-max-neef#Things"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#HumanRequirement -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#HumanRequirement"/>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Identity -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Identity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Interacting -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Interacting">
+        <owl:equivalentClass rdf:resource="http://purl.org/openeed/ond-max-neef#Settings"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Leisure -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Leisure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Participation -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Participation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Protection -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Protection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Qualities -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Qualities">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Settings -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Settings">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Subsistence -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Subsistence">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Things -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Things">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefExistentialCategory"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/openeed/ond-max-neef#Understanding -->
+
+    <owl:Class rdf:about="http://purl.org/openeed/ond-max-neef#Understanding">
+        <rdfs:subClassOf rdf:resource="http://purl.org/openeed/ond-max-neef#Max-NeefClassOfNeeds"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
 
